@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1800px" width="2880px">
+  <defs>
+    <pattern id="doodad" width="23" height="23" viewBox="0 0 40 40" patternUnits="userSpaceOnUse" patternTransform="rotate(63)">
+      <rect width="100%" height="100%" fill="rgba(29, 55, 137,0)"/>
+      <path d="M9 9a 11 11 0 0 1 22 0a 11 11 0 0 1 0 22a 11 11 0 0 1-22 0a 11 11 0 0 1 0-22M10 10a 10 10 0 0 0 0 20a 0 0 0 0 1 0 0a 10 10 0 0 0 20 0a 0 0 0 0 1 0 0a 10 10 0 0 0 0-20a 0 0 0 0 1 0 0a 10 10 0 0 0-20 0a 0 0 0 0 1 0 0z" fill="rgba(26, 32, 44,1)"/>
+      <path d="M9 9a 11 11 0 0 1 22 0a 11 11 0 0 1 0 22a 11 11 0 0 1-22 0a 11 11 0 0 1 0-22M10 10a 10 10 0 0 0 0 20a 0 0 0 0 1 0 0a 10 10 0 0 0 20 0a 0 0 0 0 1 0 0a 10 10 0 0 0 0-20a 0 0 0 0 1 0 0a 10 10 0 0 0-20 0a 0 0 0 0 1 0 0z" fill="rgba(236, 201, 75,1)" filter="url(#filter-doodad-2)"/>
+    </pattern>
+    <filter id="filter-doodad-2">
+      <feTurbulence baseFrequency="0" numOctaves="2" type="fractalNoise" result="result1"/>
+      <feDisplacementMap in2="result1" scale="0" result="result2" xChannelSelector="R" in="SourceGraphic"/>
+      <feComposite in2="result2" in="SourceGraphic" operator="atop" result="fbSourceGraphic"/>
+    </filter>
+  </defs>
+  <rect fill="url(#doodad)" height="200%" width="200%"/>
+</svg>
