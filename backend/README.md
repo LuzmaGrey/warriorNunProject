@@ -24,3 +24,6 @@ This is the backend portion of the website.  This is necessary as Javascript can
 
 hostname/petition_count
 - Returns the weekly and total number of signatures on the petition 
+
+hostname/gofundme
+- Returns the current fund amount and the current goal
