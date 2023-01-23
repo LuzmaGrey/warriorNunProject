@@ -4,14 +4,14 @@ import requests
 import os
 from bs4 import BeautifulSoup
 import json
-
+import utils.file_format as ff
 
 # Check if there is a recent count (within the last minute) file saved.  If so, use that. Otherwise, fetch more current data.
 def fetch_petition_count():
 	cur_date_time = datetime.datetime.now()
 	cur_hour_minute = cur_date_time.strftime("%Y-%m-%d %H-%M")
-	filename = format_filename(cur_hour_minute)
-	path = format_path(filename)
+	filename = ff.format_filename(cur_hour_minute)
+	path = ff.format_path(filename, "petition_files")
 	if os.path.isfile(path): 
 		# There is a current enough file.  Use it.
 		with open(path, "r") as f:
@@ -29,15 +29,6 @@ def fetch_petition_count():
 		content = jsonify(content)
 	return content
 
-
-
-def format_filename(cur_hour_minute):
-	t = cur_hour_minute.replace(" ", "_")
-	return t + ".json"
-
-def format_path(filename):
-	dir_path = os.path.dirname(os.path.realpath(__file__))
-	return dir_path + "/petition_files/" + filename
 
 def make_petition_request():
 	x = requests.get('https://www.change.org/p/renew-warrior-nun-for-season-3')

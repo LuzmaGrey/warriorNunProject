@@ -1,0 +1,5 @@
+# Backend
+**/__pycache__/**
+venv/
+petition_files/**
+gofundme_files/**
