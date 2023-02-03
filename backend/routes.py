@@ -3,6 +3,7 @@ import flask
 # API Endpoint Imports
 import petition_count as pc
 import gofundme as gfm
+import twitter_count as twt
 
 app = flask.Flask(__name__)
 
@@ -17,5 +18,9 @@ def petition_count():
 @app.route("/gofundme")
 def gofundme():
 	return gfm.fetch_gofundme()
+
+@app.route("/twitter_count")
+def twitter_count():
+	return twt.fetch_twitter_count()
 
 app.run()

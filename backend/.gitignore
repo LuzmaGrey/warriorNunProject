@@ -3,3 +3,6 @@
 venv/
 petition_files/**
 gofundme_files/**
+twitter_files/**
+Lib/
+Scripts/
