@@ -13,13 +13,13 @@
     </script>
     <!-- CSS
             ================================================== -->
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/vendor.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/f96fc7d698.js" crossorigin="anonymous"></script>
 
     <!-- favicons
             ================================================== -->
-    <link rel="icon" type="image/png" href="/assets/img/index/halo.png">
+    <link rel="icon" type="image/png" href="/frontend/assets/img/index/halo.png">
 
 </head>
 
@@ -42,7 +42,7 @@
 
             <div class="s-header__logo">
                 <a class="logo" href="index.html">
-                    <img src="/assets/img/index/brandGold.png" width="50px" height="50px" alt="Homepage">
+                    <img src="./assets/img/index/brandGold.png" width="50px" height="50px" alt="Homepage">
                 </a>
             </div>
 
@@ -56,23 +56,23 @@
                 <a href="/index.html" class="s-header__nav-close-btn" title="close">
                     <span>Close</span>
                 </a>
-                <h3>Warrior Nun</h3>
+                <h3>#SaveWarriorNun</h3>
 
                 <ul class="s-header__nav-list">
                     <li>
-                        <a href="index.html" class="smoothscroll">Home</a>
+                        <a href="./index.html">Home</a>
                     </li>
                     <li>
-                        <a href="/pages/campaign.html" class="smoothscroll">Campaign</a>
+                        <a href="/frontend/pages/campaign.html">Campaign</a>
                     </li>
                     <li>
-                        <a href="/pages/help.html" class="smoothscroll">How Can I Help?</a>
+                        <a href="/frontend/pages/help.html">How Can I Help?</a>
                     </li>
                     <li>
-                        <a href="/pages/press.html" class="smoothscroll">Press</a>
+                        <a href="/frontend/pages/press.html">Press</a>
                     </li>
                     <li>
-                        <a href="/pages/community.html" class="smoothscroll">Community</a>
+                        <a href="/pages/community.html">Community</a>
                     </li>
                 </ul>
                 <!--SIDEBAR-->
@@ -225,6 +225,7 @@
 
                         <h3 class="text-pretitle">Reasons To</h3>
                         <h1 class="text-display-title">Watch the show</h1>
+                        <!--<img src="/frontend/assets/img/index/lineDeco.png" alt="Deco">-->
 
                         <p class="lead">Are you ready for an action-packed, supernatural adventure? Warrior Nun is the
                             must-watch series for fans of demon-hunting, superpowers, and thrilling drama. The story
@@ -238,11 +239,15 @@
                             Kristina Tonteri-Young, Sylvia De Fanti, Joaquim de Almeida, William Miller, and Tristán
                             Ulloa. Don't miss out on the intense and exciting journey of Warrior Nun. Sign up for
                             Netflix now and binge-watch the entire first and second seasons!</p>
-                        <iframe width="860" height="415" src="https://www.youtube.com/embed/qBdSfbljde4"
+                            <div class="video-container">
+                        <iframe 
+                            width="860" height="415" 
+                            src="https://www.youtube.com/embed/qBdSfbljde4"
                             title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen>
                         </iframe>
+                    </div>
                     </div>
                     <!-- end column -->
                 </div>
@@ -256,17 +261,18 @@
                 <div class="s-portfolio__header">
                     <div class="row section-header section-header--dark">
                         <div class="column lg-12">
-
                             <h3 class="text-pretitle">The</h3>
                             <h1 class="text-display-title">Cast</h1>
-
                             <p class="lead">
                                 Created by Simon Barry, the series features a talented cast of Toya Turner, Thekla
                                 Reuten, Alba Baptista, Lorena Andrea, Kristina Tonteri-Young, Sylvia De Fanti, Joaquim
                                 de Almeida, William Miller, and Tristán Ulloa. Don't miss out on the intense and
                                 exciting journey of Warrior Nun. Sign up for Netflix now and binge-watch the entire
                                 first and second seasons!
-                            </p><img src="/assets/img/index/cast.png" alt="Cast">
+                            </p>
+                            
+                            <img class="castImg" src="/frontend/assets/img/index/cast.png" alt="Cast of Warrior Nun">
+
                         </div>
                         <!-- end column -->
                     </div>
@@ -365,22 +371,22 @@
                             <div class="swiper-container clients" data-animate-el>
                                 <div class="swiper-wrapper clients__content">
                                     <a href="#0" title="" class="swiper-slide clients__slide">
-                                        <img src="/assets/brands/rotten.svg.png" alt="Rotten Tomatoes" />
+                                        <img src="/frontend/assets/brands/rotten.svg.png" alt="Rotten Tomatoes" />
                                     </a>
                                     <a href="#0" title="" class="swiper-slide clients__slide">
-                                        <img src="/assets/brands/time.svg.png" alt="Times Magazine" />
+                                        <img src="/frontend/assets/brands/time.svg.png" alt="Times Magazine" />
                                     </a>
                                     <a href="#0" title="" class="swiper-slide clients__slide">
-                                        <img src="/assets/brands/Nyt.svg.png" alt="New York Times" />
+                                        <img src="/frontend/assets/brands/Nyt.svg" alt="New York Times" />
                                     </a>
                                     <a href="#0" title="" class="swiper-slide clients__slide">
-                                        <img src="/assets/brands/stv.png" alt="Spoiler TV" />
+                                        <img src="/frontend/assets/brands/stv.png" alt="Spoiler TV" />
                                     </a>
                                     <a href="#0" title="" class="swiper-slide clients__slide">
-                                        <img src="/assets/brands/looper.svg" alt="Looper" />
+                                        <img src="/frontend/assets/brands/looper.svg" alt="Looper" />
                                     </a>
                                     <a href="#0" title="" class="swiper-slide clients__slide">
-                                        <img src="/assets/brands/collider.png" alt="Collider" />
+                                        <img src="/frontend/assets/brands/collider.png" alt="Collider" />
                                     </a>
                                 </div>
 
