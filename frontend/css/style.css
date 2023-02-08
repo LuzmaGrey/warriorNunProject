@@ -2111,6 +2111,9 @@ button.btn--pill {
     border-radius : 1000px !important;
 }
 
+#titleHelp, #titleHelp1{
+    color: black;
+}
 
 /* ===================================================================
  * # TABLE
@@ -2657,6 +2660,12 @@ img.u-pull-left {
     max-width: 100%;
     height: auto;
   }
+  .decoration-line {
+    margin-top: -40px;
+    width: 100%;
+    max-width: 500px;
+    height: 60px;
+ }
   
 
 /* ------------------------------------------------------------------- 
@@ -3019,20 +3028,6 @@ img.u-pull-left {
     margin-right : 0;
 }
 
-.s-header__social svg {
-    height : 2.4rem;
-    width  : 2.4rem;
-}
-
-.s-header__social svg path {
-    fill       : rgba(255, 255, 255, 0.15);
-    transition : all 0.3s ease-in-out;
-}
-
-.s-header__social a:focus svg path,
-.s-header__social a:hover svg path {
-    fill : white;
-}
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -3081,7 +3076,7 @@ img.u-pull-left {
     bottom              : 0;
     width               : 100%;
     height              : 100%;
-    background-image    : url(../images/hero-bg.jpg);
+    background-image    : url(../assets/img/index/test.png);
     background-repeat   : no-repeat;
     background-position : center 30%;
     background-size     : cover;
@@ -3200,15 +3195,15 @@ img.u-pull-left {
     margin-bottom : 1rem;
 }
 
-.s-intro__social svg {
+.s-intro__social i {
     height : var(--vspace-0_625);
     width  : var(--vspace-0_625);
+    color: #ffffff;
 }
 
-.s-intro__social svg path {
-    fill : white;
+.listSocial{
+    list-style: none;
 }
-
 /* --------------------------------------------------------------------
  * ## intro scroll
  * -------------------------------------------------------------------- */
