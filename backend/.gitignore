@@ -7,3 +7,6 @@ twitter_files/**
 Lib/
 Scripts/
 .vercel
+
+
+pyvenv.cfg
