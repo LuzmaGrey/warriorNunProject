@@ -5,7 +5,7 @@ This is the backend portion of the website.  This is necessary as Javascript can
 
 
 ## Dev Setup
-1. Make sure you have Python 3.6.  Check the version by running ```python --version``` in the terminal.
+1. Make sure you have Python 3.9.  Check the version by running ```python --version``` in the terminal.
 2. Be in the backend folder
 3. [Create a virtual environment](https://docs.python.org/3/library/venv.html) by running ``` python3 -m venv .```
 4. Activate the virtual environment (venv)
