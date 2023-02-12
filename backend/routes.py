@@ -23,4 +23,4 @@ def gofundme():
 def twitter_count():
 	return twt.fetch_twitter_count()
 
-app.run()
+#app.run()
