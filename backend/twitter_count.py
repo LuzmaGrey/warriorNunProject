@@ -6,20 +6,10 @@ import json
 from flask import jsonify
 
 def fetch_twitter_count():
-    cur_date_time = datetime.datetime.now()
-    cur_hour_minute = cur_date_time.strftime("%Y-%m-%d %H-%M")
-    filename = ff.format_filename(cur_hour_minute)
-    path = ff.format_path(filename, "twitter_files")
-    if os.path.isfile(path): 
-        with open(path, "r") as f:
-            content = jsonify(json.load(f))
-    else:
-        res = make_request()
-        count = get_count(res)
-        content = {"last_7_days_count" : count }
-        with open(path, "w") as f:
-            json.dump(content, f)
-        content = jsonify(content)
+    res = make_request()
+    count = get_count(res)
+    content = {"last_7_days_count" : count }
+    content = jsonify(content)
     return content
 
 def make_request():
