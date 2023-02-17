@@ -6,27 +6,13 @@ from bs4 import BeautifulSoup
 import json
 import utils.file_format as ff
 
-# Check if there is a recent count (within the last minute) file saved.  If so, use that. Otherwise, fetch more current data.
 def fetch_petition_count():
-	cur_date_time = datetime.datetime.now()
-	cur_hour_minute = cur_date_time.strftime("%Y-%m-%d %H-%M")
-	filename = ff.format_filename(cur_hour_minute)
-	path = ff.format_path(filename, "petition_files")
-	if os.path.isfile(path): 
-		# There is a current enough file.  Use it.
-		with open(path, "r") as f:
-			# print("Using file that already exists")
-			content = jsonify(json.load(f))
-	else:
-		res = make_petition_request()
-		target_info = get_target_info_from_response(res)
-		weekly_count = get_weekly_count(target_info)
-		total_count = get_total_count(target_info)
-		content = {"weekly_count" : weekly_count, "total_count": total_count}
-		with open(path, "w") as f:
-			# print("Creating new file")
-			json.dump(content, f)
-		content = jsonify(content)
+	res = make_petition_request()
+	target_info = get_target_info_from_response(res)
+	weekly_count = get_weekly_count(target_info)
+	total_count = get_total_count(target_info)
+	content = {"weekly_count" : weekly_count, "total_count": total_count}
+	content = jsonify(content)
 	return content
 
 

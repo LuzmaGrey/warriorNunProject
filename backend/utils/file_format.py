@@ -10,6 +10,8 @@ def format_path(filename, directory_name):
 	dir_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 	dir_path += "/" + directory_name
 	# Create the file directories if they don't exist
+
 	if not os.path.exists(dir_path):
 		os.makedirs(dir_path)
+		
 	return dir_path + "/" + filename
