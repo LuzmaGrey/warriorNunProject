@@ -9,7 +9,8 @@ app = flask.Flask(__name__)
 
 @app.route("/")
 def home():
-	return "There is a test page to check your server is running."
+	return "There is a test page to check your server is running.\
+	The endpoints are: /petition_count, /gofundme, and /twitter_count"
 
 @app.route("/petition_count")
 def petition_count():
@@ -23,4 +24,4 @@ def gofundme():
 def twitter_count():
 	return twt.fetch_twitter_count()
 
-app.run()
+#app.run()
