@@ -1,0 +1,23 @@
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f7f7f7;
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+}
+
+.icon {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.text {
+  margin: 0;
+}
+

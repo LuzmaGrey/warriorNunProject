@@ -17,9 +17,8 @@
     <link rel="stylesheet" href="/frontend/css/vendor.css">
     <script src="https://kit.fontawesome.com/f96fc7d698.js" crossorigin="anonymous"></script>
 
-    <!-- favicons
-            ================================================== -->
-    <link rel="favicon" href="/frontend/assets/img/index/halo1.png">
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="/frontend/assets/img/index/cruciform.png">
 </head>
 
 <body id="top">
@@ -43,7 +42,7 @@
 
             <div class="s-header__logo">
                 <a class="logo" href="/frontend/index.html">
-                    <img src="/frontend/assets/img/index/brandBlack.png" alt="Homepage">
+                    <img src="/frontend/assets/img/index/cruciform.png" alt="Homepage">
                 </a>
             </div>
 
@@ -73,7 +72,7 @@
                         <a href="/frontend/pages/press.html">Press</a>
                     </li>
                     <li>
-                        <a href="/pages/community.html">Community</a>
+                        <a href="/frontend/pages/community.html">Community</a>
                     </li>
                 </ul>
                 <!--SIDEBAR-->
@@ -121,36 +120,80 @@
 
 
             <!-- NUMBERS ----------------------------------------------- -->
-            <section id="about" class="s-about target-section">
+            <section id="services" class="s-services">
 
-                <div class="row s-about__content">
+                <div class="s-services__bg campaign"></div>
+                
+                <div class="row narrow section-header section-header--dark has-bottom-sep">
+                    
                     <div class="column lg-12">
-                        <h2 class="text-pretitle">Numbers of the campaign</h2>
-                        <p class="s-about__desc">
-                            Despite receiving high ratings on Rotten Tomatoes and ticking all the boxes of a successful
-                            show,
-                            <span>Warrior Nun</span>
-                            was still not renewed for a third season. This is a disappointing trend among shows led by
-                            queer women, which have consistently been cancelled despite their quality. We are tired of
-                            begging for representation and demand that our stories be given the same attention and
-                            respect as any other. We are determined to save
-                            <span>Warrior Nun</span>
-                            and are calling on all fans to join us in making noise and pressuring Netflix and other
-                            platforms to reconsider their approach to diverse representation. Will you join us in the
-                            fight for representation?
-                        </p>
-                    </div>
-                    <!-- end column  -->
-                </div>
-                <!-- end s-about__content  -->
+                        <h3 class="text-pretitle">The numbers of</h3>
+                        <h1 class="text-display-title">The campaign</h1>
+                    </div> <!-- end column -->
+                </div> <!-- end section header -->
+                <div class="s-services__content">
 
-            </section>
+                    <div class="row services-list " data-animate-block>
+
+                        <div class="column service-item" data-animate-el>
+                            <div class="service-content">
+                                <h3 class="text-display-title">432,993</h3>
+                               <h3 class="lead">Total of Tweets for <span>#SaveWarriorNun</span> hashtag</h3>
+                               <h3></h3>
+                            </div>
+
+                        </div> <!-- end service-item -->
+
+                        <div class="column service-item" data-animate-el>
+                            <div class="service-content">
+                                <h3 class="text-display-title">432,993</h3>
+                                <h3 class="lead">Change.org petitions signed</h3>
+                            </div>
+
+                        </div> <!-- end service-item -->
+
+                        <div class="column service-item" data-animate-el>
+
+                            <div class="service-content">
+                                <h3 class="text-display-title">432,993</h3>
+                              <h3 class="lead">Total of donations on Go Fund Me</h3>
+                            </div>
+
+                        </div> <!-- end service-item -->
+
+                    </div> <!-- end services-list -->
+                    
+                </div> <!-- end services-content -->   
+
+            </section> <!-- end services -->
+
             <!-- end NUMBERS -->
+            <div class="row s-contact__bottom">
+
+                <div class="column lg-7 tab-12 s-contact__subscribe">
+                    <h5>
+                        Go and interact on 
+                        <a href="https://twitter.com/home" target="_blank">
+                            Twitter
+                        </a>
+                    </h5>
+
+                    <div class="subscribe-form">
+                        <form id="mc-form" class="mc-form" action="https://twitter.com/home" target="_blank">
+
+                            <input type="submit" value="Let's Go"
+                                class="btn btn--primary u-fullwidth">
+                            <div class="mc-status"></div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
 
 
             <!-- Why We're Fighting----------------------------------------------- -->
-            <section id="services" class="s-services">
-                <div class="s-services__bg"></div>
+            <section id="services-camp" class="s-services">
+                <div class="fight s-services__bg"></div>
                 <div class="row narrow section-header section-header--dark has-bottom-sep">
                     <div class="column lg-12">
                         <h3 class="text-pretitle">WHY</h3>
@@ -199,7 +242,27 @@
                 <!-- end section header -->
             </section>
             <!-- end services -->
+            <div class="row s-contact__bottom">
 
+                <div class="column lg-7 tab-12 s-contact__subscribe">
+                    <h5>
+                        Donate on 
+                        <a href="https://gofund.me/5da77b60" target="_blank">
+                            Go Fund Me
+                        </a>
+                    </h5>
+
+                    <div class="subscribe-form">
+                        <form id="mc-form" class="mc-form" action="https://gofund.me/5da77b60" target="_blank">
+
+                            <input type="submit" value="Let's Go"
+                                class="btn btn--primary u-fullwidth">
+                            <div class="mc-status"></div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
 
             <!-- portfolio
                             ----------------------------------------------- -->
@@ -273,9 +336,9 @@
                         </h5>
 
                         <div class="subscribe-form">
-                            <form id="mc-form" class="mc-form" novalidate="true">
+                            <form id="mc-form" class="mc-form" action="https://www.change.org/p/renew-warrior-nun-for-season-3" target="_blank">
 
-                                <input type="submit" name="Let's Go" value="Let's Go"
+                                <input type="submit" value="Let's Go"
                                     class="btn btn--primary u-fullwidth">
                                 <div class="mc-status"></div>
                             </form>
