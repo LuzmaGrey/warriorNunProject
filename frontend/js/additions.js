@@ -25,10 +25,42 @@ fetch("quotes.json").then(response => response.json()).then(data => {
   
 
 
-  document.addEventListener( 'DOMContentLoaded', function () {
+  /*document.addEventListener( 'DOMContentLoaded', function () {
     new Splide( '#image-carousel', {
       cover      : true,
       heightRatio: 0.5,
     } ).mount();
-  } );
+  } );*/
 
+  let slider = document.querySelector('.slider');
+let sliderItems = document.querySelectorAll('.slider-item');
+let currentSlide = 0;
+
+function goToSlide(slide) {
+  slider.style.transform = 'translateY(-' + (slide * 100) + '%)';
+}
+
+function nextSlide() {
+  currentSlide++;
+  if (currentSlide >= sliderItems.length) {
+    currentSlide = 0;
+  }
+  goToSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide--;
+  if (currentSlide < 0) {
+    currentSlide = sliderItems.length - 1;
+  }
+  goToSlide(currentSlide);
+}
+
+let prevButton = document.querySelector('.prev-button');
+let nextButton = document.querySelector('.next-button');
+
+prevButton.addEventListener('click', prevSlide);
+nextButton.addEventListener('click', nextSlide);
+
+
+//SOCIAL

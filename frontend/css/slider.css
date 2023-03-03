@@ -1,23 +1,93 @@
-.splide__slide img {
+.slider-container {
+  height: 130vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  height: auto;
-}
-.card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  background-color: #f7f7f7;
-  display: inline-block;
-  margin: 10px;
-  width: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
-.icon {
-  display: block;
-  font-size: 30px;
-  margin-bottom: 10px;
+.slider-item {
+  height: 100%;
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.text {
-  margin: 0;
+.slider-item img {
+  height: 80%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
+.link-slide {
+  position: absolute;
+  margin-top: -42px !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-size: 36px;
+  background: none;
+  cursor: pointer;
+
+}
+
+.prev-button {
+  left: 20px;
+}
+
+.next-button {
+  right: 20px;
+}
+.slider-controls button {
+  color: #fff;
+  background-color: #4c474755;
+  border: none;
+  border-radius: 40%;
+  width: 30px;
+  height: 60px;
+  padding: 0;
+  margin: 0 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.slider-controls button:hover {
+  background-color: #222;
+}
+/*SOCIAL*/
+
+.listA p{
+  width: 400px;
+}

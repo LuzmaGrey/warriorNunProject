@@ -3,7 +3,7 @@
 
 <head>
     <!---- basic page needs
-    ================================================== -->
+            ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>#SaveWarriorNun</title>
@@ -13,9 +13,10 @@
         document.documentElement.classList.add('js');
     </script>
 
-  <!-- CSS======================================= -->
+    <!-- CSS======================================= -->
     <link rel="stylesheet" href="../css/vendor.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/slider.css">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f96fc7d698.js" crossorigin="anonymous"></script>
     <!--favicon-->
@@ -25,10 +26,9 @@
 
 <body id="top">
 
-   <!-- preloader=============================== -->
+    <!-- preloader=============================== -->
     <div id="preloader">
-        <div id="loader">
-        </div>
+        <div id="loader"></div>
     </div>
 
 
@@ -36,7 +36,7 @@
     <div id="page" class="s-pagewrap">
 
 
-       <!-- # site header ======================= -->
+        <!-- # site header ======================= -->
         <header class="s-header">
 
             <div class="s-header__logo">
@@ -52,7 +52,8 @@
 
             <nav class="s-header__nav">
 
-                <a href="#0" class="s-header__nav-close-btn" title="close"><span>Close</span>
+                <a href="#0" class="s-header__nav-close-btn" title="close">
+                    <span>Close</span>
                 </a>
                 <h3>#SaveWarriorNun</h3>
 
@@ -103,13 +104,14 @@
                     </li>
                 </ul>
             </nav>
-        </header> <!-- ends-header -->
+        </header>
+        <!-- ends-header -->
 
 
         <!-- # site-content ====================== -->
         <section id="content" class="s-content">
-           
-           
+
+
             <!-- services------------------------>
             <section id="services" class="s-services">
                 <div class="s-services__bg quote"></div>
@@ -117,48 +119,358 @@
                     <div class="column lg-12">
                         <h3 class="text-pretitle-com">Quote of the day</h3>
                         <p id="quote" class="lead"></p>
-                    </div> <!-- end column -->
-                </div> <!-- end section header -->
-                <div class="s-services__content">
-                </div> <!-- end services-content -->
-            </section> <!-- end services -->
+                    </div>
+                    <!-- end column -->
+                </div>
+                <!-- end section header -->
+                <div class="s-services__content"></div>
+                <!-- end services-content -->
+            </section>
+            <!-- end services -->
 
 
             <!-- portfolio
-            ----------------------------------------------- -->
-            <section id="portfolio" class="s-portfolio">
-                <div class="row testimonials">
-                    <div class="column lg-12" data-animate-block>
+                            ----------------------------------------------- -->
 
-                        <h2 class="text-pretitle" data-animate-el>The OCS Newsletter</h2>
+            <section>
+                <div class="slider-container">
+                    <div class="slider-controls">
+                        <button class="prev-button">&#10094;</button>
+                    </div>
+                    <div class="slider">
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2022-12-27 with credit.jpg">
+                            <a href="https://twitter.com/coeurdinosaur/status/1607894164464701440" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2022-12-28 with credit.jpg">
+                            <a href="https://twitter.com/coeurdinosaur/status/1608252502394159104" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2022-12-29 with credit.jpg">
+                            <a href="https://twitter.com/coeurdinosaur/status/1608611684616396800" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2022-12-30 with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1608966225627058177" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2022-12-31 (1) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1609301086459895813" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2022-12-31 (2) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1609301086459895813" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2022-12-31 (3) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1609301086459895813" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2022-12-31 (4) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1609301086459895813" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2022-12-31 (5) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1609301086459895813" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-02 (1) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1610031376253730817" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-02 (2) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1610031376253730817" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-03 with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1610395986559488001" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-04 with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1610759566249332736" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-05 with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1611112940916064257" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-06 (1) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1611479872127356943" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-06 (2) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1611479872127356943" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-06 (3) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1611479872127356943" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-09 with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1612560581554311169" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-10 with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1612925200537997317" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-11 with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1613292247570698246" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-12 (1) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1613659159139950607" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-12 (2) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1613659159139950607" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-12 (3) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1613659159139950607" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-13 (1) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1614035027301466114" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-13 (2) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1614035027301466114" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-13 (3) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1614035027301466114" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-13 (4) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1614035027301466114" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-13 (5) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1614035035023097859" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-13 (6) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1614035035023097859" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-13 (7) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1614035035023097859" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-13 (8) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1614035035023097859" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs//OCS 2023-01-16 with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1615121792917721090" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-18 (1) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1615839356815564801" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-18 (2) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1615839356815564801" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-23 Father Vincent (1) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1617673586600448000" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-23 Father Vincent (2) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1617673586600448000" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-23 Father Vincent (3) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1617673586600448000" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-23 Father Vincent (4) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1617673586600448000" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-23 Father Vincent (5) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1617673586600448000" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-23 Father Vincent (6) with credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1617673586600448000" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-27 (1) updated credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1619100942863040512" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-27 (2) updated credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1619100942863040512" target="_blank"
+                                class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-30 (1) updated credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1620182641357242382?s=20&t=QRLwPZf97Q6POO1vMAZtLA"
+                                target="_blank" class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-30 (2) updated credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1620182641357242382?s=20&t=QRLwPZf97Q6POO1vMAZtLA"
+                                target="_blank" class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-30 (3) updated credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1620182641357242382?s=20&t=QRLwPZf97Q6POO1vMAZtLA"
+                                target="_blank" class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <img src="/frontend/assets/ocs/OCS 2023-01-30 (4) updated credit.jpg" alt="">
+                            <a href="https://twitter.com/coeurdinosaur/status/1620182641357242382?s=20&t=QRLwPZf97Q6POO1vMAZtLA"
+                                target="_blank" class="link-slide">
+                                Link to the original post
+                            </a>
+                        </div>
 
-                        <div class="swiper-container testimonial-slider" data-animate-el>
 
-                            <section id="image-carousel" class="splide" aria-label="Beautiful Images">
-                                <div class="splide__track">
-                                      <ul class="splide__list">
-                                          <li class="splide__slide">
-                                              <img src="https://savewarriornun.net/__static/3fa44c89298ffe78e9932d8398b42883/6-jan-3.jpg" alt="">
-                                          </li>
-                                          <li class="splide__slide">
-                                              <img src="https://savewarriornun.net/__static/3fa44c89298ffe78e9932d8398b42883/6-jan-3.jpg" alt="">
-                                          </li>
-                                          <li class="splide__slide">
-                                              <img src="https://savewarriornun.net/__static/3fa44c89298ffe78e9932d8398b42883/6-jan-3.jpg" alt="">
-                                          </li>
-                                      </ul>
-                                </div>
-                              </section>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="next-button">&#10095;</button>
+                    </div>
+                </div>
 
-                        </div> <!-- end swiper-container -->
+            </section>
 
-                    </div> <!-- end column -->
-                </div> <!-- end row testimonials -->
-            </section> <!-- end portfolio -->
 
-   <!-- services
-            ----------------------------------------------- -->
-          
             <!--CONTACT-->
             <section id="contact" class="s-contact target-section">
 
@@ -169,11 +481,14 @@
                         <h1 class="text-display-title">
                             Have an idea or an epic project in mind? Talk to us.
                             Let's work together and make something great.
-                            Drop us a line at <a href="mailto:#0">hello@infinity.com</a>.
+                            Drop us a line at
+                            <a href="mailto:#0">hello@infinity.com</a>.
                         </h1>
 
-                    </div> <!-- end column -->
-                </div> <!-- end section header -->
+                    </div>
+                    <!-- end column -->
+                </div>
+                <!-- end section header -->
 
                 <div class="row s-contact__infos">
 
@@ -215,7 +530,8 @@
                         </ul>
                     </div>
 
-                </div> <!-- end s-contact__infos -->
+                </div>
+                <!-- end s-contact__infos -->
 
                 <div class="row s-contact__bottom">
 
@@ -243,10 +559,12 @@
                         </div>
                     </div>
 
-                </div> <!-- end s-contact__button -->
+                </div>
+                <!-- end s-contact__button -->
 
 
-            </section> <!-- end contact -->
+            </section>
+            <!-- end contact -->
 
         </section>
         <!-- end s-content -->
@@ -257,26 +575,31 @@
             <div class="row">
                 <div class="column lg-12 ss-copyright">
                     <span>©All Rights Reserved</span>
-                    <span>Design by <a href="https://github.com/LuzmaGrey">Luzma Grey</a></span>
+                    <span>Design by
+                        <a href="https://github.com/LuzmaGrey">Luzma Grey</a>
+                    </span>
                 </div>
             </div>
 
             <div class="ss-go-top">
                 <a class="smoothscroll" title="Back to Top" href="#top">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"
                         style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
                         <path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path>
                     </svg>
                 </a>
-            </div> <!-- end ss-go-top -->
-        </footer> <!-- end s-footer -->
+            </div>
+            <!-- end ss-go-top -->
+        </footer>
+        <!-- end s-footer -->
 
 
-    </div> <!-- end s-pagewrap -->
+    </div>
+    <!-- end s-pagewrap -->
 
 
     <!-- photoswipe background
-    ================================================== -->
+            ================================================== -->
     <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
 
         <div class="pswp__bg"></div>
@@ -290,11 +613,11 @@
 
             <div class="pswp__ui pswp__ui--hidden">
                 <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
-                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
-                        title="Share"></button> <button class="pswp__button pswp__button--fs"
-                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
-                        title="Zoom in/out"></button>
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
                     <div class="pswp__preloader">
                         <div class="pswp__preloader__icn">
                             <div class="pswp__preloader__cut">
@@ -305,7 +628,8 @@
                 </div>
                 <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
                     <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
                 <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
                 <div class="pswp__caption">
                     <div class="pswp__caption__center"></div>
@@ -314,11 +638,12 @@
 
         </div>
 
-    </div> <!-- end photoSwipe background -->
+    </div>
+    <!-- end photoSwipe background -->
 
 
     <!-- Java Script
-    ================================================== -->
+            ================================================== -->
     <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/additions.js"></script>
